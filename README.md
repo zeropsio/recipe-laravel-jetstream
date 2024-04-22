@@ -10,7 +10,7 @@ Laravel Jetstream is a beautifully designed application starter kit for Laravel 
 - Zerops KeyDB (Redis) service for session and cache
 - Zerops Object Storage (S3 compatible) service as file system
 - [Mailpit](https://github.com/axllent/mailpit) as SMTP mock server
-- [Adminer](https://github.com/vrana/adminer) as database management 
+- [Adminer](https://github.com/vrana/adminer) as database management
 
 
 ## Import YAML
@@ -60,7 +60,7 @@ services:
 
   - hostname: app
     type: php-nginx@8.3+1.22
-    buildFromGit: https://github.com/fxck/zerops-laravel-hello-world
+    buildFromGit: https://github.com/zeropsio/recipe-laravel-jetstream
     enableSubdomainAccess: true
     envSecrets:
       APP_NAME: ZeropsLaravel
