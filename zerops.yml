@@ -1,0 +1,23 @@
+zerops:
+  - setup: app
+    build:
+      base:
+        - php@8.3
+        - nodejs@18
+      buildCommands:
+        - composer install --optimize-autoloader --no-dev
+        - npm install
+        - npm run build
+      deploy: ./
+      cache:
+        - vendor
+        - composer.lock
+        - node_modules
+        - package-lock.json
+    run:
+      initCommands:
+        - php artisan view:cache
+        - php artisan config:cache
+        - php artisan route:cache
+        - php artisan migrate --isolated --force
+        - php artisan optimize
