@@ -11,6 +11,9 @@ You can either click the deploy button to deploy on Zerops directly, or manually
     <img width="250" alt="Deploy on Zerops" src="https://github.com/zeropsio/recipe-laravel-jetstream/assets/1303561/21cf77dd-cded-4e41-8e76-24540a809ccc">
 </a>
 
+<br/>
+<br/>
+
 ## Recipe features
 
 - Laravel + Inertia.js running on Zerops PHP + nginx service
@@ -23,6 +26,8 @@ You can either click the deploy button to deploy on Zerops directly, or manually
 - [Mailpit](https://github.com/axllent/mailpit) as **SMTP mock server**
 - [Adminer](https://www.adminer.org) for **quick database management** tool
 
+<br/>
+
 ## Production vs. development
 
 Base of the recipe is ready for production, the difference comes down to:
@@ -31,6 +36,8 @@ Base of the recipe is ready for production, the difference comes down to:
 - Use at least two containers for Jetstream service to achieve high reliability and resilience (add *minContainers: 2* in recipe YAML *app* service)
 - Use production-ready third-party SMTP server instead of Mailpit (change *MAIL_* secret variables in recipe YAML *app* service)
 - Disable public access to Adminer or remove it altogether (remove service adminer from recipe YAML)
+
+<br/>
 
 ## Changes made over the default installation
 
