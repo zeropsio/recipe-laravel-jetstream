@@ -14,10 +14,72 @@ zerops:
         - composer.lock
         - node_modules
         - package-lock.json
+    deploy:
+      readinessCheck:
+        httpGet:
+          port: 80
+          path: /up
     run:
+      base: php-nginx@8.3
+      siteConfigPath: site.conf
+      envVariables:
+        APP_LOCALE: en
+        APP_FAKER_LOCALE: en_US
+        APP_FALLBACK_LOCALE: en
+        APP_MAINTENANCE_DRIVER: file
+        APP_MAINTENANCE_STORE: database
+        APP_TIMEZONE: UTC
+        APP_URL: ${zeropsSubdomain}
+        ASSET_URL: ${APP_URL}
+        VITE_APP_NAME: ${APP_NAME}
+
+        DB_CONNECTION: pgsql
+        DB_DATABASE: db
+        DB_HOST: db
+        DB_PASSWORD: ${db_password}
+        DB_PORT: 5432
+        DB_USERNAME: ${db_user}
+
+        AWS_ACCESS_KEY_ID: ${storage_accessKeyId}
+        AWS_REGION: us-east-1
+        AWS_BUCKET: ${storage_bucketName}
+        AWS_ENDPOINT: ${storage_apiUrl}
+        AWS_SECRET_ACCESS_KEY: ${storage_secretAccessKey}
+        AWS_URL: ${storage_apiUrl}/${storage_bucketName}
+        AWS_USE_PATH_STYLE_ENDPOINT: true
+
+        LOG_CHANNEL: syslog
+        LOG_LEVEL: debug
+        LOG_STACK: single
+
+        MAIL_FROM_ADDRESS: hello@example.com
+        MAIL_FROM_NAME: ZeropsLaravel
+        MAIL_HOST: mailpit
+        MAIL_MAILER: smtp
+        MAIL_PORT: 1025
+
+        BROADCAST_CONNECTION: redis
+        CACHE_PREFIX: cache
+        CACHE_STORE: redis
+        QUEUE_CONNECTION: redis
+        REDIS_CLIENT: phpredis
+        REDIS_HOST: redis
+        REDIS_PORT: 6379
+        SESSION_DRIVER: redis
+        SESSION_ENCRYPT: false
+        SESSION_LIFETIME: 120
+        SESSION_PATH: /
+
+        BCRYPT_ROUNDS: 12
+        TRUSTED_PROXIES: "*"
+        FILESYSTEM_DISK: s3
       initCommands:
         - php artisan view:cache
         - php artisan config:cache
         - php artisan route:cache
         - php artisan migrate --isolated --force
         - php artisan optimize
+      healthCheck:
+        httpGet:
+          port: 80
+          path: /up
