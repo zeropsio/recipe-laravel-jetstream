@@ -1,6 +1,6 @@
 #yamlPreprocessor=on
 project:
-  name: laravel-jetstream
+  name: recipe-laravel
   tags:
     - zerops-recipe
 
