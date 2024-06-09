@@ -14,11 +14,11 @@ zerops:
         - composer.lock
         - node_modules
         - package-lock.json
-    deploy:
-      readinessCheck:
-        httpGet:
-          port: 80
-          path: /up
+    # deploy:
+    #   readinessCheck:
+    #     httpGet:
+    #       port: 80
+    #       path: /up
     run:
       base: php-nginx@8.3
       siteConfigPath: site.conf
