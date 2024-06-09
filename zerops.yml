@@ -21,7 +21,7 @@ zerops:
     #       path: /up
     run:
       base: php-nginx@8.3
-      siteConfigPath: site.conf
+      siteConfigPath: site.conf.tmpl
       envVariables:
         APP_LOCALE: en
         APP_FAKER_LOCALE: en_US
