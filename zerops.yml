@@ -4,6 +4,7 @@ zerops:
       base:
         - php@8.3
         - nodejs@18
+      os: ubuntu
       buildCommands:
         - composer install --optimize-autoloader --no-dev
         - npm install
@@ -14,13 +15,14 @@ zerops:
         - composer.lock
         - node_modules
         - package-lock.json
-    # deploy:
-    #   readinessCheck:
-    #     httpGet:
-    #       port: 80
-    #       path: /up
+    deploy:
+      readinessCheck:
+        httpGet:
+          port: 80
+          path: /up
     run:
       base: php-nginx@8.3
+      os: ubuntu
       siteConfigPath: site.conf.tmpl
       envVariables:
         APP_LOCALE: en
