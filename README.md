@@ -1,6 +1,6 @@
 # Zerops x Laravel Jetstream
 
-![laravel](https://github.com/zeropsio/recipe-laravel-jetstream/assets/1303561/e5a53f95-f657-4f6b-8ba9-9fdfa07292dd)
+![laravel](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/cover-laravel.png)
 
 [Laravel Jetstream](https://jetstream.laravel.com/introduction.html) is an advanced starter kit by Laravel. Zerops recipe for Jetstream includes all the advanced functionality — session and cache stored in Redis and files stored in Object Storage, this makes it perfectly suitable for production of any size.
 
@@ -8,7 +8,7 @@
 You can either click the deploy button to deploy directly on Zerops, or manually copy the [import yaml](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/zerops-project-import.yml) to the import dialog in the Zerops app.
 
 <a href="https://app.zerops.io/recipe/laravel">
-    <img width="250" alt="Deploy on Zerops" src="https://github.com/zeropsio/recipe-laravel-jetstream/assets/1303561/21cf77dd-cded-4e41-8e76-24540a809ccc">
+    <img width="250" alt="Deploy on Zerops" src="https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/deploy-button.png">
 </a>
 
 <br/>
