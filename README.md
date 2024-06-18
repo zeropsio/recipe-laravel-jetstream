@@ -43,7 +43,7 @@ Base of the recipe is ready for production, the difference comes down to:
 
 ## Changes made over the default installation
 
-If you want to modify your own app running Jetstream to efficiently run on Zerops, these are the general steps we took:
+If you want to modify your existing Laravel/Jetstream app to efficiently run on Zerops, these are the general steps we took:
 
 - Add [zerops.yml](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/zerops.yml) to your repository, our example includes idempotent migrations, caching, and optimized build process
 - Add [league/flysystem-aws-s3-v3](https://github.com/zeropsio/recipe-laravel-jetstream/blob/main/composer.json#L14) to your composer.json to support Object Storage file system
