@@ -12,11 +12,10 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 [![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/laravel)
 
 <br/>
-<br/>
 
 ## Recipe features
 
-- Load balanced Laravel + Inertia.js running on **Zerops PHP + nginx** service
+- Laravel + Inertia.js running on a load balanced **Zerops PHP + Nginx** service
 - Zerops **PostgreSQL 16** service as database
 - Zerops KeyDB (**Redis**) service for session and cache
 - Zerops **Object Storage** (S3 compatible) service as file system
