@@ -1,8 +1,7 @@
 # Zerops x Laravel Jetstream
+[Laravel Jetstream](https://jetstream.laravel.com/introduction.html) is an advanced starter kit by Laravel. [Zerops](https://zerops.io) recipe for Jetstream includes all the advanced functionality — session and cache stored in Redis and files stored in Object Storage, this makes it perfectly suitable for production of any size.
 
 ![laravel](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/cover-laravel.png)
-
-[Laravel Jetstream](https://jetstream.laravel.com/introduction.html) is an advanced starter kit by Laravel. [Zerops](https://zerops.io) recipe for Jetstream includes all the advanced functionality — session and cache stored in Redis and files stored in Object Storage, this makes it perfectly suitable for production of any size.
 
 <br/>
 
@@ -12,11 +11,10 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 [![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/laravel)
 
 <br/>
-<br/>
 
 ## Recipe features
 
-- Load balanced Laravel + Inertia.js running on **Zerops PHP + nginx** service
+- Laravel + Inertia.js running on a load balanced **Zerops PHP + Nginx** service
 - Zerops **PostgreSQL 16** service as database
 - Zerops KeyDB (**Redis**) service for session and cache
 - Zerops **Object Storage** (S3 compatible) service as file system
