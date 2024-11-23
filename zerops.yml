@@ -2,7 +2,7 @@ zerops:
   - setup: app
     build:
       base:
-        - php@8.3
+        - php@8.4
         - nodejs@18
       os: ubuntu
       buildCommands:
@@ -21,7 +21,7 @@ zerops:
           port: 80
           path: /up
     run:
-      base: php-nginx@8.3
+      base: php-nginx@8.4
       os: ubuntu
       siteConfigPath: site.conf.tmpl
       envVariables:
