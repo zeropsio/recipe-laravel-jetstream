@@ -6,7 +6,7 @@ project:
 
 services:
   - hostname: app
-    type: php-nginx@8.3
+    type: php-nginx@8.4
     buildFromGit: https://github.com/zeropsio/recipe-laravel-jetstream
     enableSubdomainAccess: true
     envSecrets:
