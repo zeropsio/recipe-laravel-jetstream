@@ -33,7 +33,6 @@ Base of the recipe is ready for production, the difference comes down to:
 - Use highly available version of the PostgreSQL database (change `mode` from `NON_HA` to `HA` in recipe YAML, `db` service section)
 - Use at least two containers for Jetstream service to achieve high reliability and resilience (add `minContainers: 2` in recipe YAML, `app` service section)
 - Use production-ready third-party SMTP server instead of Mailpit (change `MAIL_` secret variables in recipe YAML `app` service)
-- Disable public access to Adminer or remove it altogether (remove service `adminer` from recipe YAML)
 
 <br/>
 
