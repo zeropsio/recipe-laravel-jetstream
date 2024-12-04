@@ -23,7 +23,6 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 - Logs set up to use **syslog** and accessible through Zerops GUI
 - Utilization of Zerops built-in **environment variables** system
 - [Mailpit](https://github.com/axllent/mailpit) as **SMTP mock server**
-- [Adminer](https://www.adminer.org) for **quick database management** tool
 
 <br/>
 
