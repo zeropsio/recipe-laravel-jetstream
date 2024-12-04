@@ -21,7 +21,7 @@ services:
     priority: 10
 
   - hostname: redis
-    type: keydb@6
+    type: valkey@7.2
     mode: NON_HA
     priority: 10
 
@@ -33,7 +33,7 @@ services:
 
   - hostname: mailpit
     type: go@1
-    buildFromGit: https://github.com/zeropsio/recipe-mailpit@alpha
+    buildFromGit: https://github.com/zeropsio/recipe-mailpit
     enableSubdomainAccess: true
 
   - hostname: adminer
