@@ -13,9 +13,6 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 
 <br/>
 
-## Understand Zerops Core Concepts
-If you want to try integrating Zerops from scratch on a new Laravel project, check our [step-by-step tutorial](https://docs.zerops.io/frameworks/laravel/introduction) which demonstrates how to use Zerops effectively with Laravel.
-<br/>
 ## Recipe features
 
 - Laravel + Inertia.js running on a load balanced **Zerops PHP + Nginx** service
@@ -38,6 +35,11 @@ Base of the recipe is ready for production, the difference comes down to:
 - Use production-ready third-party SMTP server instead of Mailpit (change `MAIL_` secret variables in recipe YAML `app` service)
 
 <br/>
+
+## Understand Zerops Core Concepts
+If you want to try integrating Zerops from scratch on a new Laravel project, check our [step-by-step tutorial](https://docs.zerops.io/frameworks/laravel/introduction) which demonstrates how to use Zerops effectively with Laravel.
+<br/>
+
 
 ## Changes made over the default installation
 
