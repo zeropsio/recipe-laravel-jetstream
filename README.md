@@ -13,6 +13,9 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 
 <br/>
 
+## Understand Zerops Core Concepts
+If you want to try integrating Zerops from scratch on a new Laravel project, check our [step-by-step tutorial](https://docs.zerops.io/frameworks/laravel/introduction) which demonstrates how to use Zerops effectively with Laravel.
+<br/>
 ## Recipe features
 
 - Laravel + Inertia.js running on a load balanced **Zerops PHP + Nginx** service
