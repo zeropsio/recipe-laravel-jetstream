@@ -15,6 +15,9 @@ services:
       APP_DEBUG: true
       APP_ENV: development
       APP_KEY: <@generateRandomString(<32>)>
+    verticalAutoscaling:
+      minRam: 0.25
+      minFreeRamGB: 0.125
 
   - hostname: db
     type: postgresql@16
